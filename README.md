@@ -38,3 +38,9 @@ This is a template for quickly spinning applications with the new [Dune API](htt
    ```
 
 You should now be able to access the app at [http://localhost:5000](http://localhost:5000)!
+
+## Add Your Query
+Go to `app.py` and add an ID for the query you would like to run with this app. Add this to the `QUERY_ID` variable.
+And then restart the app with your new query.
+
+Please note that currently this template is in Beta. And might not scale well to all queries.

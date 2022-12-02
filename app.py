@@ -9,7 +9,8 @@ import time
 API_KEY = os.getenv("API_KEY")
 HEADER = {"x-dune-api-key" : API_KEY}
 
-QUERY_ID = "638435"
+# Example Query ID - 638435
+QUERY_ID = "your_query_ID"
 
 BASE_URL = "https://api.dune.com/api/v1/"
 
@@ -61,7 +62,7 @@ def fetch_data_from_chains(address):
     time.sleep(10)
     response = get_query_results(execution_id)
 
-    return response.json()['result']['rows']
+    return response.json()['result']['rows']['sum']
 
 
 @app.route("/", methods=("GET", "POST"))
